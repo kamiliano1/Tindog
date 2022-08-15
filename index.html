@@ -1,0 +1,40 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <title>Tindog</title>
+    </head>
+    <body>
+        <header class= "container">
+            <div class="profile-icon"></div>
+            <div class="header-logo"></div>
+            <div class="chat-icon"></div>
+        </header>
+        <main id = "main-container" class= "container">
+        </main>
+        <section class="container bottom-section">
+            <img class="bottom-btn" id="dont-like-btn" src ="images/icon-cross.png" alt="Cross Icon">
+            <img class="bottom-btn" id="like-btn" src ="images/icon-heart.png" alt="Heart Icon">
+        </section>
+        
+        
+        <!-- Dog Match PopUp -->
+        <div id="overlay" class="container">
+            <div id = "match-pop-up">
+                <h1>It's a match 😀 wuf, wuf</h1>
+            </div>
+        </div>
+        
+        <!-- No more dogs PopUp -->
+        <div id="overlay-no-more-dogs" class="container">
+            <div id = "no-more-dogs-pop-up">
+                <h2>No more dogs in your neighborhood 😞</h2>
+                <h2>Try again later</h2>
+            </div>
+        </div>
+
+        <script src="/index.js" type="module"></script>
+    </body>
+</html>

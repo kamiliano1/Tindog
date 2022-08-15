@@ -1,0 +1,190 @@
+body {
+    padding: 1rem 0;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    max-width: 540px;
+    overflow: visible;
+    color:#F8F8F8;
+    width: 90%;
+    
+}
+
+/* Typography */
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #B7B7B7;
+    margin: 0;
+}
+
+/* Header */
+
+header {
+
+    margin: 0 auto;
+    padding: 0 1em; 
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header Icons */
+/* Header Icons */
+/* Header Icons */
+
+.header-logo {
+    width: 60px;
+    
+}
+
+.profile-icon,
+.header-logo,
+.chat-icon { 
+    
+    padding: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+}
+
+.profile-icon {
+   background-image: url("images/icon-profile.png"); 
+}
+
+.profile-icon:hover,
+profile-icon:active {
+    background-image: url("images/Vector-hover.png")
+}
+
+.header-logo {
+    background-image: url("images/logo.png"); 
+}
+
+.header-logo:hover,
+.header-logo:active {
+    background-image: url("images/paw-icon-hover.png"); 
+}
+
+.chat-icon {
+   background-image: url("images/icon-chat.png"); 
+}
+
+.chat-icon:hover,
+.chat-icon:active {
+    background-image: url("images/chat-icon-hover.png")
+}
+
+/* Main */
+
+main {
+    background:pink;
+    background-size: cover;
+    border-radius: 15px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .9em;
+    margin: 1em 0;
+}
+
+.background-animation {
+    animation: dogTransition 2.5s;
+}
+
+.badge {
+    padding-top: 3em;
+    width: 230px;
+    display: none;
+    transform: rotate(-30deg);
+}
+.badge-active {
+    display: block;
+    animation: badgeVisibility 1s;
+}
+
+.badge-active-trasparent {
+    display: block;
+    opacity: 0.4;
+}
+
+/* Bottom section */
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+
+}
+
+.bottom-btn {
+    border-radius: 1px;
+    max-width: 50px;
+    margin: 1.2em 2em;
+    padding: 2.3em; 
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.bottom-btn:hover,
+.bottom-btn:focus{
+    background: #DBFFF4;
+}
+
+#dont-like-btn:hover,
+#dont-like-btn.focus{
+    background: #FFE7EF;
+}
+
+/* Pop-Up */
+
+#match-pop-up, #no-more-dogs-pop-up {
+    opacity: 0.8;
+    border-radius: 30px;
+    color: black;
+    top: 350px;
+    max-width: 360px;
+    position: relative;
+    background-color: white;
+    padding: 1em 1.5em;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+#overlay, #overlay-no-more-dogs {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 20, 30, 0.3);
+}
+
+/* Animations */
+
+@keyframes badgeVisibility {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dogTransition {
+    0% {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.00);
+    }
+}
